@@ -5,44 +5,46 @@ https://colab.research.google.com/drive/1-p3irsg8MpQUg2GsWuo2qQFpv6mokOqa?usp=sh
 ###  Visualization & Overfitting
 
 **1. What signs indicated overfitting in your first model?**
-     The main indication of overfitting in the first model was the substantial difference between the training and validation performance metrics; in particular, the 
-     validation loss started to rise rather than fall and the training accuracy increased toward 100% while the validation accuracy plateaued at a much lower level.
+     -The main indication of overfitting in the first model was the substantial difference between the training and validation performance metrics; in particular, the 
+      validation loss started to rise rather than fall and the training accuracy increased toward 100% while the validation accuracy plateaued at a much lower level.
 
 **2. How did data augmentation affect validation accuracy?**
-Data augmentation increased validation accuracy by forcing the model to learn robust, broad properties (like plant textures and shapes). Instead of memorizing precise orientations or lighting, the model learned to recognize the core features of the plants.
+     -By making the model learn more robust and broad properties, including plant textures and shapes, instead than memorizing the precise orientation or lighting of the  
+      original training photos, data augmentation increased validation accuracy.
 
 ---
 
 ###  Model Improvement
 
 **3. What is the purpose of dropout layers?**
-Dropout acts as a regularization tool. By randomly deactivating a portion of neurons during training, it prevents the model from becoming overly dependent on specific paths, encouraging the network to learn more dependable, redundant patterns.
+     -By randomly deactivating a portion of neurons during each training session, a dropout layer serves as a regularization tool that keeps the model from becoming
+      overly dependent on any one path and promotes the learning of more dependable patterns.
 
 **4. Why does data augmentation improve generalization?**
-It artificially increases the diversity of the training set. This enables the model to handle real-world variances not present in the original dataset, such as different angles, rotations, and lighting conditions.
+    - By artificially increasing the diversity of the training set, data augmentation enhances generalization by enabling the model to handle variances in real-world 
+      settings that were not present in the original dataset, such as varied angles, rotations, and lighting.
 
 ---
 
 ###  Performance Comparison
 
-| Metric | Before Improvements | After Improvements |
-| :--- | :--- | :--- |
-| **Accuracy Gap** | Large (High Train / Low Val) | Significantly Narrower |
-| **Consistency** | Low / Volatile | High / Reliable |
-
 **5. Compare accuracy before and after improvements.**
-Prior to modifications, the model had a sizable "accuracy gap." After including dropout and augmentation, this gap shrank considerably, leading to a more consistent and dependable validation accuracy.
-
+    - Prior to the modifications, the model had a sizable "accuracy gap" in which it performed well on training data but badly on validation data. This gap considerably  
+      shrank once dropout and augmentation were included, leading to a more consistent and dependable validation accuracy.
+      
 **6. Which technique contributed most to improvement?**
-Data augmentation typically provides the most significant boost in image classification by preventing "memorization." Dropout complements this by ensuring the internal network architecture remains resilient.
+    - By preventing the model from over-fitting to the particular training samples, data augmentation typically improves picture classification the most, while the  
+      performance may vary depending on the particular dataset. Dropout further guarantees the network's resilience.
+
 
 ---
 
 ###  Deployment & Application
 
 **7. Why is saving the model important?**
-Saving allows you to permanently preserve the learned patterns and weights. This is essential for making real-world predictions without wasting time and computational resources on retraining from scratch.
+    - In order to use the model for real-world predictions without having to invest the substantial time and computational resources necessary to retrain it from start,  
+      saving the model is essential since it enables you to permanently preserve the learnt patterns and weights.
 
 **8. How can this model be deployed in a real-world system?**
-* **Mobile:** Use **TensorFlow Lite (TFLite)** for on-device, offline identification.
-* **Web/Cloud:** Wrap the model in a web API using **Flask** or **FastAPI** for server-side processing.
+    - TensorFlow Lite (TFLite) can be used to run the model directly on mobile devices for offline plant identification, or it can be wrapped in a web API using frameworks 
+      like Flask or FastAPI for server-side processing.
