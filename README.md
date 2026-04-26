@@ -1,8 +1,8 @@
 https://colab.research.google.com/drive/1-p3irsg8MpQUg2GsWuo2qQFpv6mokOqa?usp=sharing
 
-## 🧠 Student Explanation & Reflection
+##  Student Explanation & Reflection
 
-### 📉 Visualization & Overfitting
+###  Visualization & Overfitting
 
 **1. What signs indicated overfitting in your first model?**
 The main indication of overfitting was the substantial difference between the training and validation performance metrics. Specifically:
@@ -14,7 +14,7 @@ Data augmentation increased validation accuracy by forcing the model to learn ro
 
 ---
 
-### 🛠️ Model Improvement
+###  Model Improvement
 
 **3. What is the purpose of dropout layers?**
 Dropout acts as a regularization tool. By randomly deactivating a portion of neurons during training, it prevents the model from becoming overly dependent on specific paths, encouraging the network to learn more dependable, redundant patterns.
@@ -24,7 +24,7 @@ It artificially increases the diversity of the training set. This enables the mo
 
 ---
 
-### 📊 Performance Comparison
+###  Performance Comparison
 
 | Metric | Before Improvements | After Improvements |
 | :--- | :--- | :--- |
@@ -39,7 +39,7 @@ Data augmentation typically provides the most significant boost in image classif
 
 ---
 
-### 🚀 Deployment & Application
+###  Deployment & Application
 
 **7. Why is saving the model important?**
 Saving allows you to permanently preserve the learned patterns and weights. This is essential for making real-world predictions without wasting time and computational resources on retraining from scratch.
