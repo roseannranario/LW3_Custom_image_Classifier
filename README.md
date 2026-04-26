@@ -1,4 +1,4 @@
-https://github.com/roseannranario/LW3_Custom_image_Classifier
+https://colab.research.google.com/drive/1-p3irsg8MpQUg2GsWuo2qQFpv6mokOqa?usp=sharing
 
 Guide Questions (Student Explanation & Reflection)
 Students must answer:
