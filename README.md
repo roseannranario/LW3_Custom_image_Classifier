@@ -12,7 +12,6 @@ https://colab.research.google.com/drive/1-p3irsg8MpQUg2GsWuo2qQFpv6mokOqa?usp=sh
      -By making the model learn more robust and broad properties, including plant textures and shapes, instead than memorizing the precise orientation or lighting of the  
       original training photos, data augmentation increased validation accuracy.
 
----
 
 ###  Model Improvement
 
@@ -24,7 +23,7 @@ https://colab.research.google.com/drive/1-p3irsg8MpQUg2GsWuo2qQFpv6mokOqa?usp=sh
     - By artificially increasing the diversity of the training set, data augmentation enhances generalization by enabling the model to handle variances in real-world 
       settings that were not present in the original dataset, such as varied angles, rotations, and lighting.
 
----
+
 
 ###  Performance Comparison
 
@@ -37,7 +36,6 @@ https://colab.research.google.com/drive/1-p3irsg8MpQUg2GsWuo2qQFpv6mokOqa?usp=sh
       performance may vary depending on the particular dataset. Dropout further guarantees the network's resilience.
 
 
----
 
 ###  Deployment & Application
 
