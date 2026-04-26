@@ -5,9 +5,8 @@ https://colab.research.google.com/drive/1-p3irsg8MpQUg2GsWuo2qQFpv6mokOqa?usp=sh
 ###  Visualization & Overfitting
 
 **1. What signs indicated overfitting in your first model?**
-The main indication of overfitting was the substantial difference between the training and validation performance metrics. Specifically:
-* **Validation Loss:** Started to rise while training loss continued to fall.
-* **Accuracy Gap:** Training accuracy approached 100%, while validation accuracy plateaued at a much lower level.
+     The main indication of overfitting in the first model was the substantial difference between the training and validation performance metrics; in particular, the 
+     validation loss started to rise rather than fall and the training accuracy increased toward 100% while the validation accuracy plateaued at a much lower level.
 
 **2. How did data augmentation affect validation accuracy?**
 Data augmentation increased validation accuracy by forcing the model to learn robust, broad properties (like plant textures and shapes). Instead of memorizing precise orientations or lighting, the model learned to recognize the core features of the plants.
